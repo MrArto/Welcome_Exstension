@@ -1,0 +1,25 @@
+{
+ "manifest_version": 2,
+  "name": "TextInjector",
+  "description": "Inject a welcome message text",
+  "version": "1.0",
+    "icons": {
+        "16": "/images/icon16.png",
+        "48": "/images/icon48.png",
+        "128": "/images/icon128.png"
+  },
+  "page_action": {
+    "default_icon": {
+      "16": "/images/icon_16.png",
+      "48": "/images/icon_48.png",
+      "128": "/images/icon_128.png"
+    }
+  },
+  "content_scripts": [
+   {
+     "matches": ["https://example.com/"],
+     "css": ["my-styles.css"],
+     "js": ["content-script.js"]
+   }
+ ]
+}
